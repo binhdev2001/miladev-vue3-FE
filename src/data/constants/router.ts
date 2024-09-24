@@ -11,6 +11,12 @@ export const ROUTE_NAME = {
       child: 'vendor.detail.child'
     }
   },
+  user: {
+    root: 'user',
+    index: 'user.index',
+    update: 'user.update',
+    desposit: 'user.desposit'
+  },
   project: {
     index: 'project.index'
   }

@@ -17,6 +17,16 @@
       "root": "Quản lý nhà cung cấp",
       "list": "Danh sách nhà cung cấp",
       "add": "Thêm nhà cung cấp"
+    },
+    "user-info": {
+      "update": "Cập nhật thông tin người dùng"
+    },
+    "user": {
+      "desposit": "Nạp tiền",
+      "root": "Thông tin người dùng"
+    },
+    "user-management": {
+      "update": "Cập nhật thông tin người dùng"
     }
   },
   "auth": {
@@ -25,9 +35,19 @@
     "login": "Đăng nhập",
     "signin": "Đăng nhập",
     "logout": "Đăng xuất",
-    "profile": "Thông tin"
+    "profile": "Thông tin",
+    "email": "Email đăng nhập"
   },
   "rules": {
-    "required": "{field} là bắt buộc"
+    "required": "{field} là bắt buộc",
+    "invalidEmail": "{field} là chưa đúng định dạng"
+  },
+  "pages": {
+    "login": {
+      "titile": "Đăng nhập tài khoản"
+    },
+    "home": {
+      "intro": "Đây là bảng thông tin tổng quan và thông báo mới nhất"
+    }
   }
 }

@@ -40,22 +40,6 @@ const appStore = useAppStore()
     :collapsed-width="64"
     :width="280"
   >
-    <div
-      class="h-[140px] flex items-center justify-center border-b border-[#ffffff4d] transition-all"
-      :class="{
-        'h-[60px]': appStore.sideBarCollapsed
-      }"
-    >
-      <transition name="fade" mode="out-in" appear>
-        <n-image
-          v-if="appStore.sideBarCollapsed"
-          src="/images/logo-icon.png"
-          preview-disabled
-          width="48"
-        />
-        <n-image v-else src="/images/logo-text-white.svg" preview-disabled />
-      </transition>
-    </div>
     <n-scrollbar style="height: calc(100% - 140px); padding-top: 8px">
       <n-menu
         :collapsed-width="64"

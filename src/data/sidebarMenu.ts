@@ -27,24 +27,17 @@ export const menuOptions = computed<MenuMixedOption[]>(() => [
     props: {}
   },
   {
-    label: renderLabel(t('menus.vendor-management.root')),
-    key: 'vendor-management',
+    label: renderLabel(t('menus.user.root')),
+    key: 'user-management',
     icon: renderIcon('solar:user-circle-outline'),
     show: true,
     children: [
       {
         label: renderRoute({
-          label: t('menus.vendor-management.add'),
-          name: RouteName.vendor.create
+          label: t('menus.user-info.update'),
+          name: RouteName.user.update
         }),
-        key: RouteName.vendor.create
-      },
-      {
-        label: renderRoute({
-          label: t('menus.vendor-management.list'),
-          name: RouteName.vendor.root
-        }),
-        key: RouteName.vendor.root
+        key: RouteName.user.update
       }
     ]
   }

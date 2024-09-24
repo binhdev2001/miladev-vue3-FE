@@ -6,7 +6,7 @@ export const useAuthStore = defineStore('authStore', {
     profile: null as Auth.UserProfile | null
   }),
   actions: {
-    async login(data: { username: string; password: string }) {
+    async login(data: { email: string; password: string }) {
       try {
         const res = await apiAuth.login(data)
         res.data.expires_in = new Date().getTime() + res.data.expires_in * 1000

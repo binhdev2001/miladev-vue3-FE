@@ -35,5 +35,5 @@ const state = reactive({
 </script>
 
 <template>
-  <div>Project management</div>
+  <div>Cập nhật thông tin người dùng</div>
 </template>

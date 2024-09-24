@@ -33,16 +33,21 @@ const state = reactive({
 const errorMessage = ref('')
 
 const formData = reactive({
-  username: '',
+  email: '',
   password: ''
 })
 
 const rules: FormRules = {
-  username: [
+  email: [
     {
       required: true,
-      renderMessage: () => t('rules.required', { field: t('auth.username') }),
+      renderMessage: () => t('rules.required', { field: t('auth.email') }),
       trigger: 'blur'
+    },
+    {
+      type: 'email',
+      renderMessage: () => t('rules.invalidEmail', { field: t('auth.email') }),
+      trigger: ['blur', 'input']
     }
   ],
   password: [
@@ -87,11 +92,11 @@ onMounted(() => {
 <template>
   <div
     class="bg-gray-200 w-screen h-screen flex justify-center items-center bg-no-repeat bg-cover bg-right-top"
-    style="background-image: url('/images/login-background.jpg')"
+    style="background-image: url('/images/login-background.svg')"
   >
-    <div class="w-[520px] bg-white p-[60px] rounded-tr-[30px] rounded-bl-[30px]">
+    <div class="w-[420px] bg-white p-[60px] rounded-tr-[30px] rounded-bl-[30px]">
       <div class="text-center mb-[60px]">
-        <n-image src="/images/logo-text.svg" preview-disabled />
+        <h1 class="font-bold text-2xl text-black">{{ t('pages.login.titile') }}</h1>
       </div>
       <n-form
         ref="formRef"
@@ -102,10 +107,10 @@ onMounted(() => {
         :rules="rules"
         @submit.prevent="onSubmit"
       >
-        <n-form-item path="username">
+        <n-form-item path="email">
           <n-input
-            v-model:value="formData.username"
-            :placeholder="t('auth.username')"
+            v-model:value="formData.email"
+            :placeholder="t('auth.email')"
             size="large"
             @change="errorMessage = ''"
           />
