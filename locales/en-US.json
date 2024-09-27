@@ -9,7 +9,8 @@
     "add": "Add",
     "search": "Search",
     "clear": "Clear",
-    "close": "Close"
+    "close": "Close",
+    "update": "Update"
   },
   "menus": {
     "home": "Home",
@@ -19,7 +20,7 @@
       "add": "New Vendor"
     },
     "user-info": {
-      "update": "Update user information"
+      "update": "Updat  information"
     },
     "user": {
       "desposit": "Deposit money",
@@ -36,11 +37,15 @@
     "signin": "Sign in",
     "logout": "Logout",
     "profile": "Profile",
-    "email": "Login email"
+    "email": "Login email",
+    "old_password": "Old password",
+    "new_password": "New password",
+    "confirm_password": "Confirm password"
   },
   "rules": {
     "required": "{field} is required",
-    "invalidEmail": "{field} is not in the correct format"
+    "invalidEmail": "{field} is not in the correct format",
+    "password_mismatch": "Confirm passwords do not match"
   },
   "pages": {
     "login": {
@@ -48,6 +53,31 @@
     },
     "home": {
       "intro": "This is the latest overview and announcements"
+    },
+    "user": {
+      "intro": "You can change information here"
+    }
+  },
+  "page": {
+    "user": {
+      "change-password": "Update password"
+    },
+    "users": {
+      "email": "E-mail",
+      "phone": "Phone number",
+      "roles": "Account type",
+      "total-money": "Balance",
+      "buttons": {
+        "change-password": "Update password",
+        "update": "Edit information",
+        "edit": "Edit"
+      }
+    }
+  },
+  "page-users": {
+    "buttons": {
+      "change-pass": "Update password",
+      "change_pass": "Update password"
     }
   }
 }

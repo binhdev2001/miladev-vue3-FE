@@ -9,6 +9,8 @@ export namespace Auth {
   export interface UserProfile {
     id: number
     username: string
+    email: string
+    phone: string
     is_active: number
     email_verified_at: string
     last_login_at: null

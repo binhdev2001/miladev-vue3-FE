@@ -12,7 +12,7 @@ const routes: RouteRecordRaw[] = [
         name: RouteName.user.update,
         component: () => import('@/views/user-management/IndexView.vue'),
         meta: {
-          title: i18nRaw.t('menus.vendor-management.add')
+          title: i18nRaw.t('menus.user.update')
         }
       }
     ]

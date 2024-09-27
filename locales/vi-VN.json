@@ -9,7 +9,8 @@
     "add": "Thêm",
     "search": "Tìm kiếm",
     "clear": "Clear",
-    "close": "Đóng"
+    "close": "Đóng",
+    "update": "Cập nhật"
   },
   "menus": {
     "home": "Trang chủ",
@@ -19,7 +20,7 @@
       "add": "Thêm nhà cung cấp"
     },
     "user-info": {
-      "update": "Cập nhật thông tin người dùng"
+      "update": "Cập nhật thông tin"
     },
     "user": {
       "desposit": "Nạp tiền",
@@ -36,11 +37,15 @@
     "signin": "Đăng nhập",
     "logout": "Đăng xuất",
     "profile": "Thông tin",
-    "email": "Email đăng nhập"
+    "email": "Email đăng nhập",
+    "old_password": "Mật khẩu cũ",
+    "new_password": "Mật khẩu mới",
+    "confirm_password": "Xác nhận mật khẩu"
   },
   "rules": {
     "required": "{field} là bắt buộc",
-    "invalidEmail": "{field} là chưa đúng định dạng"
+    "invalidEmail": "{field} là chưa đúng định dạng",
+    "password_mismatch": "Xác nhận mật khẩu không khớp"
   },
   "pages": {
     "login": {
@@ -48,6 +53,31 @@
     },
     "home": {
       "intro": "Đây là bảng thông tin tổng quan và thông báo mới nhất"
+    },
+    "user": {
+      "intro": "Bạn có thể thay đổi thông tin tại đây"
+    }
+  },
+  "page": {
+    "user": {
+      "change-password": "Cập nhật mật khẩu"
+    },
+    "users": {
+      "email": "Email",
+      "phone": "Số điện thoại",
+      "roles": "Loại tài khoản",
+      "total-money": "Số dư",
+      "buttons": {
+        "change-password": "Cập nhật mật khẩu",
+        "update": "Chỉnh sửa thông tin",
+        "edit": "Chỉnh sửa"
+      }
+    }
+  },
+  "page-users": {
+    "buttons": {
+      "change-pass": "Cập nhật mật khẩu",
+      "change_pass": "Cập nhật mật khẩu"
     }
   }
 }

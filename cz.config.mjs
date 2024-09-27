@@ -19,6 +19,7 @@ export default {
     {
       value: 'Add',
       name: 'Add:       Thêm tính năng mới (feature)'
+      //examples: ['feat: add new feature', 'feature: add new feature']
     },
     {
       value: 'Update',
